@@ -67,7 +67,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   //fetch text from server (response from openai)
-  const response = await fetch("http://localhost:5000", {
+  const response = await fetch("https://openai-codex-jfux.onrender.com/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
